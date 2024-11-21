@@ -17,6 +17,9 @@ namespace tapetes
 	/// </summary>
 	public partial class pequeño : Form
 	{
+		string s;
+		double h ;
+		double j,f,p,g,w,q,a;
 		public pequeño()
 		{
 			//
@@ -38,6 +41,85 @@ namespace tapetes
 		{
 			materiales materiales = new materiales();
 			materiales.Show();
+		}
+		
+		void TxthorasTextChanged(object sender, EventArgs e)
+		{
+			s = txthoras.Text;
+			h = Int32.Parse(s);
+			h *= 100;
+			
+		}
+				
+		void TxtcalculaClick(object sender, EventArgs e)
+		{
+			h += j + h + f + p + g + w + q + a;
+			lbltotal.Text = h.ToString();
+		}
+		
+		void TxtpresonasTextChanged(object sender, EventArgs e)
+		{
+			string s1 = txthoras.Text;
+			j = Int32.Parse(s1);
+			j *= 150;
+		}
+		
+		void TxtfloresTextChanged(object sender, EventArgs e)
+		{
+			string s1 = txthoras.Text;
+			f = Int32.Parse(s1);
+			f *= 30;
+		}
+		
+		void FrutosTextChanged(object sender, EventArgs e)
+		{
+			string s1 = txthoras.Text;
+			p = Int32.Parse(s1);
+			p *= 80;
+		}
+		
+		
+		void TxtsserrinTextChanged(object sender, EventArgs e)
+		{
+			string s1 = txthoras.Text;
+			g = Int32.Parse(s1);
+			g *= 80;
+		}
+		
+		void TxtpinturaTextChanged(object sender, EventArgs e)
+		{
+			string s1 = txthoras.Text;
+			w = Int32.Parse(s1);
+			w *= 150;
+		}
+		
+		void TxtcomidaTextChanged(object sender, EventArgs e)
+		{
+			string s1 = txthoras.Text;
+			q = Int32.Parse(s1);
+			q *= 50;
+		}
+		
+		void TxtaguaTextChanged(object sender, EventArgs e)
+		{
+			string s1 = txthoras.Text;
+			a = Int32.Parse(s1);
+			a *= 1;
+		}
+		
+		void TxttamañoTextChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void PequeñoLoad(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void TextBox1TextChanged(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

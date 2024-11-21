@@ -59,21 +59,21 @@ namespace tapetes
 		
 		void TxtpresonasTextChanged(object sender, EventArgs e)
 		{
-			string s1 = txthoras.Text;
+			string s1 = txtpresonas.Text;
 			j = Int32.Parse(s1);
 			j *= 150;
 		}
 		
 		void TxtfloresTextChanged(object sender, EventArgs e)
 		{
-			string s1 = txthoras.Text;
+			string s1 = txtflores.Text;
 			f = Int32.Parse(s1);
 			f *= 30;
 		}
 		
 		void FrutosTextChanged(object sender, EventArgs e)
 		{
-			string s1 = txthoras.Text;
+			string s1 = frutos.Text;
 			p = Int32.Parse(s1);
 			p *= 80;
 		}
@@ -81,30 +81,37 @@ namespace tapetes
 		
 		void TxtsserrinTextChanged(object sender, EventArgs e)
 		{
-			string s1 = txthoras.Text;
+			string s1 = txtsserrin.Text;
 			g = Int32.Parse(s1);
 			g *= 80;
 		}
 		
 		void TxtpinturaTextChanged(object sender, EventArgs e)
 		{
-			string s1 = txthoras.Text;
+			string s1 = txtpintura.Text;
 			w = Int32.Parse(s1);
 			w *= 150;
 		}
 		
 		void TxtcomidaTextChanged(object sender, EventArgs e)
 		{
-			string s1 = txthoras.Text;
+			string s1 = txtcomida.Text;
 			q = Int32.Parse(s1);
 			q *= 50;
 		}
 		
 		void TxtaguaTextChanged(object sender, EventArgs e)
 		{
-			string s1 = txthoras.Text;
+			string s1 = txtagua.Text;
 			a = Int32.Parse(s1);
 			a *= 1;
+		}
+		
+		void txtareaTextChanged(object sender, EventArgs e)
+		{
+			string s1 = txtarea.Text;
+					a = Int32.Parse(s1);
+					a *= 1;
 		}
 	}
 }

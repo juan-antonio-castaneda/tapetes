@@ -59,6 +59,7 @@ namespace tapetes
 			this.label13 = new System.Windows.Forms.Label();
 			this.txtcalcula = new System.Windows.Forms.Button();
 			this.lbltotal = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// btnregresa
@@ -251,11 +252,20 @@ namespace tapetes
 			this.lbltotal.TabIndex = 65;
 			this.lbltotal.Text = ". . .";
 			// 
+			// label11
+			// 
+			this.label11.Location = new System.Drawing.Point(15, 5);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(114, 32);
+			this.label11.TabIndex = 67;
+			this.label11.Text = "numeros de presonas: 5-8";
+			// 
 			// mediano
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(462, 309);
+			this.Controls.Add(this.label11);
 			this.Controls.Add(this.lbltotal);
 			this.Controls.Add(this.label13);
 			this.Controls.Add(this.txtcalcula);
@@ -284,6 +294,7 @@ namespace tapetes
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label lbltotal;
 		private System.Windows.Forms.Button txtcalcula;
 		private System.Windows.Forms.Label label13;

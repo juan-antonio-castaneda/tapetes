@@ -58,9 +58,10 @@ namespace tapetes
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.lbltotal = new System.Windows.Forms.TextBox();
 			this.label13 = new System.Windows.Forms.Label();
 			this.txtcalcula = new System.Windows.Forms.Button();
+			this.label11 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// btnregresa
@@ -105,6 +106,7 @@ namespace tapetes
 			this.txttamaño.Name = "txttamaño";
 			this.txttamaño.Size = new System.Drawing.Size(100, 20);
 			this.txttamaño.TabIndex = 59;
+			this.txttamaño.TextChanged += new System.EventHandler(this.TxttamañoTextChanged);
 			// 
 			// label12
 			// 
@@ -120,6 +122,7 @@ namespace tapetes
 			this.txtagua.Name = "txtagua";
 			this.txtagua.Size = new System.Drawing.Size(100, 20);
 			this.txtagua.TabIndex = 57;
+			this.txtagua.TextChanged += new System.EventHandler(this.TxtaguaTextChanged);
 			// 
 			// txtcomida
 			// 
@@ -127,6 +130,7 @@ namespace tapetes
 			this.txtcomida.Name = "txtcomida";
 			this.txtcomida.Size = new System.Drawing.Size(100, 20);
 			this.txtcomida.TabIndex = 56;
+			this.txtcomida.TextChanged += new System.EventHandler(this.TxtcomidaTextChanged);
 			// 
 			// txtpintura
 			// 
@@ -134,6 +138,7 @@ namespace tapetes
 			this.txtpintura.Name = "txtpintura";
 			this.txtpintura.Size = new System.Drawing.Size(100, 20);
 			this.txtpintura.TabIndex = 55;
+			this.txtpintura.TextChanged += new System.EventHandler(this.TxtpinturaTextChanged);
 			// 
 			// txtsserrin
 			// 
@@ -141,6 +146,7 @@ namespace tapetes
 			this.txtsserrin.Name = "txtsserrin";
 			this.txtsserrin.Size = new System.Drawing.Size(100, 20);
 			this.txtsserrin.TabIndex = 54;
+			this.txtsserrin.TextChanged += new System.EventHandler(this.TxtsserrinTextChanged);
 			// 
 			// frutos
 			// 
@@ -148,6 +154,7 @@ namespace tapetes
 			this.frutos.Name = "frutos";
 			this.frutos.Size = new System.Drawing.Size(100, 20);
 			this.frutos.TabIndex = 53;
+			this.frutos.TextChanged += new System.EventHandler(this.FrutosTextChanged);
 			// 
 			// txtflores
 			// 
@@ -155,6 +162,7 @@ namespace tapetes
 			this.txtflores.Name = "txtflores";
 			this.txtflores.Size = new System.Drawing.Size(100, 20);
 			this.txtflores.TabIndex = 52;
+			this.txtflores.TextChanged += new System.EventHandler(this.TxtfloresTextChanged);
 			// 
 			// txtpresonas
 			// 
@@ -162,6 +170,7 @@ namespace tapetes
 			this.txtpresonas.Name = "txtpresonas";
 			this.txtpresonas.Size = new System.Drawing.Size(100, 20);
 			this.txtpresonas.TabIndex = 51;
+			this.txtpresonas.TextChanged += new System.EventHandler(this.TxtpresonasTextChanged);
 			// 
 			// txthoras
 			// 
@@ -169,6 +178,7 @@ namespace tapetes
 			this.txthoras.Name = "txthoras";
 			this.txthoras.Size = new System.Drawing.Size(100, 20);
 			this.txthoras.TabIndex = 50;
+			this.txthoras.TextChanged += new System.EventHandler(this.TxthorasTextChanged);
 			// 
 			// label9
 			// 
@@ -234,13 +244,14 @@ namespace tapetes
 			this.label2.TabIndex = 42;
 			this.label2.Text = "horas de trabajo";
 			// 
-			// textBox1
+			// lbltotal
 			// 
-			this.textBox1.Enabled = false;
-			this.textBox1.Location = new System.Drawing.Point(331, 228);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 65;
+			this.lbltotal.Enabled = false;
+			this.lbltotal.Location = new System.Drawing.Point(331, 228);
+			this.lbltotal.Name = "lbltotal";
+			this.lbltotal.Size = new System.Drawing.Size(100, 20);
+			this.lbltotal.TabIndex = 65;
+			this.lbltotal.TextChanged += new System.EventHandler(this.TextBox1TextChanged);
 			// 
 			// label13
 			// 
@@ -259,12 +270,21 @@ namespace tapetes
 			this.txtcalcula.Text = "calcula";
 			this.txtcalcula.UseVisualStyleBackColor = true;
 			// 
+			// label11
+			// 
+			this.label11.Location = new System.Drawing.Point(21, 9);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(114, 32);
+			this.label11.TabIndex = 66;
+			this.label11.Text = "numeros de presonas: 3-5";
+			// 
 			// pequeño
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(441, 336);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.label11);
+			this.Controls.Add(this.lbltotal);
 			this.Controls.Add(this.label13);
 			this.Controls.Add(this.txtcalcula);
 			this.Controls.Add(this.txttamaño);
@@ -291,12 +311,14 @@ namespace tapetes
 			this.Controls.Add(this.btnregresa);
 			this.Name = "pequeño";
 			this.Text = "pequeño";
+			this.Load += new System.EventHandler(this.PequeñoLoad);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Button txtcalcula;
 		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox lbltotal;
 		private System.Windows.Forms.TextBox txthoras;
 		private System.Windows.Forms.TextBox txtpresonas;
 		private System.Windows.Forms.TextBox txtflores;

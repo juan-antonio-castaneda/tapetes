@@ -60,6 +60,9 @@ namespace tapetes
 			this.txtcalcula = new System.Windows.Forms.Button();
 			this.label13 = new System.Windows.Forms.Label();
 			this.lbltotal = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label14 = new System.Windows.Forms.Label();
+			this.txtarea = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// btnregresa
@@ -246,7 +249,7 @@ namespace tapetes
 			// 
 			// label13
 			// 
-			this.label13.Location = new System.Drawing.Point(112, 205);
+			this.label13.Location = new System.Drawing.Point(238, 211);
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(86, 23);
 			this.label13.TabIndex = 61;
@@ -254,17 +257,44 @@ namespace tapetes
 			// 
 			// lbltotal
 			// 
-			this.lbltotal.Location = new System.Drawing.Point(238, 205);
+			this.lbltotal.Location = new System.Drawing.Point(330, 208);
 			this.lbltotal.Name = "lbltotal";
 			this.lbltotal.Size = new System.Drawing.Size(100, 23);
 			this.lbltotal.TabIndex = 62;
 			this.lbltotal.Text = ". . .";
+			// 
+			// label12
+			// 
+			this.label12.Location = new System.Drawing.Point(9, 0);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(114, 32);
+			this.label12.TabIndex = 67;
+			this.label12.Text = "numeros de presonas: 10-18";
+			// 
+			// label14
+			// 
+			this.label14.Location = new System.Drawing.Point(19, 211);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(87, 23);
+			this.label14.TabIndex = 68;
+			this.label14.Text = "tamaño";
+			// 
+			// txtarea
+			// 
+			this.txtarea.Location = new System.Drawing.Point(112, 205);
+			this.txtarea.Name = "txtarea";
+			this.txtarea.Size = new System.Drawing.Size(100, 20);
+			this.txtarea.TabIndex = 69;
+ 
 			// 
 			// grande
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(439, 307);
+			this.Controls.Add(this.txtarea);
+			this.Controls.Add(this.label14);
+			this.Controls.Add(this.label12);
 			this.Controls.Add(this.lbltotal);
 			this.Controls.Add(this.label13);
 			this.Controls.Add(this.txtcalcula);
@@ -294,6 +324,9 @@ namespace tapetes
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.TextBox txtarea;
+		private System.Windows.Forms.Label label14;
+		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label lbltotal;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Button txtcalcula;

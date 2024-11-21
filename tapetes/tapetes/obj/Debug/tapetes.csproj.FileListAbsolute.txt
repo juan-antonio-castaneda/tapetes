@@ -9,3 +9,14 @@ C:\Users\CC2_PC9\tapetes2\tapetes\tapetes\obj\Debug\tapetes.csproj.GenerateResou
 C:\Users\CC2_PC9\tapetes2\tapetes\tapetes\obj\Debug\tapetes.exe
 C:\Users\CC2_PC9\tapetes2\tapetes\tapetes\obj\Debug\tapetes.pdb
 C:\Users\CC2_PC9\tapetes2\tapetes\tapetes\obj\Debug\tapetes.materiales.resources
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\bin\Debug\tapetes.exe
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\bin\Debug\tapetes.pdb
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.csprojResolveAssemblyReference.cache
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.grande.resources
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.MainForm.resources
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.materiales.resources
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.mediano.resources
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.pequeño.resources
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.csproj.GenerateResource.Cache
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.exe
+C:\Users\CC1_PC39\tapetes\tapetes\tapetes\obj\Debug\tapetes.pdb
